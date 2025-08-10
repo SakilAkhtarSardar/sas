@@ -15,7 +15,9 @@ start = datetime(end.year-20,end.month,end.day)
 
 google_data = yf.download(stock, start, end)
 
+# Load model from .h5 file instead of .keras to fix loading error
 model = load_model("Latest_stock_price_model.h5")
+
 st.subheader("Stock Data")
 st.write(google_data)
 
