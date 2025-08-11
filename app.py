@@ -7,7 +7,7 @@ import yfinance as yf
 
 st.title("Stock Price Predictor App")
 
-stock = st.text_input("Enter the Stock ID", "GOOG")
+stock = st.text_input("Enter the Stock ID", "AAPL")
 
 from datetime import datetime
 end = datetime.now()
